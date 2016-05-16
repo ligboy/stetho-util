@@ -1,7 +1,7 @@
 language: android
 android:
   components:
-    - android-23.0.3
+    - android-23
     # Additional components
     - extra-google-google_play_services
     - extra-google-m2repository
