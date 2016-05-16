@@ -31,7 +31,7 @@ deploy:
   on:
     tags: true
 after_deploy:
-- "./gradlew stetho:bintrayUpload stetho-no-op:bintrayUpload stetho-okhttp:bintrayUpload stetho-okhttp-no-op:bintrayUpload stetho-timber:bintrayUpload stetho-timber-no-op:bintrayUpload"
+- "./gradlew stetho:bintrayUpload stetho-no-op:bintrayUpload stetho-okhttp:bintrayUpload stetho-okhttp-no-op:bintrayUpload stetho-okhttp3:bintrayUpload stetho-okhttp3-no-op:bintrayUpload stetho-timber:bintrayUpload stetho-timber-no-op:bintrayUpload"
 branches:
   except:
   - gh-pages
@@ -43,3 +43,4 @@ cache:
   - "$HOME/.gradle/caches/"
   - "$HOME/.gradle/wrapper/"
   - "$HOME/.android/"
+  - "$ANDROID_HOME"
