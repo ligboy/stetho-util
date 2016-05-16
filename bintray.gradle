@@ -14,7 +14,7 @@ bintray {
 
     pkg {
         repo = "maven"
-        name = mavenArtifactId
+        name = projectName
         desc = projectDesc
         userOrg = bintrayOrg
         licenses = [ 'Apache-2.0' ]
