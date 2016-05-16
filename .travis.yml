@@ -1,30 +1,28 @@
 language: android
+jdk: oraclejdk8
 android:
   components:
-    - android-23
-    # Additional components
-    - extra-google-google_play_services
-    - extra-google-m2repository
-    - extra-android-m2repository
-    - addon-google_apis-google-19
-
-    - sys-img-x86-android-23
+  - android-23
+  - extra-google-google_play_services
+  - extra-google-m2repository
+  - extra-android-m2repository
+  - addon-google_apis-google-19
+  - sys-img-x86-android-23
 deploy:
   provider: releases
   api_key:
-    secure: iDYq/BUsWGAxpW1Y2k1XcaajLT5nzMGfNhLMZnEvuz9k0QiOD+xZjk5hV5UqHSTXU70qqvVqb90leSFsy27hbTAXRttWl+4uIgXJuGmclLNIdVCA8OsOlWkcyIrNZRJdWrmx/DkgGZasB8P/V+EnOQpyfpS+gN49ahqUutafhn4vMoidJYtbQ6LH8jewnv9tSUa/jlPDuF38nPROvY1XVfDgEp4UIw9NS5TTD8UuhD9h5Zbj4X+l7ywtRIKPzI0ap+F76NPNB/8LKmUoP/3wmw6JJapZN6UBKjKQue7T6r+ICo6ajwuic0QCL49Km1kLnx3HDfBM6LwZZjzLfaBWOs1CfBlcrUX7gDJaoVRk5toDDB2Kg1HJfaH94AcnHKJwTEAkv1pskjPQNrLc99/KoqWJFl61wvaSkDIriq6ppIEg9j8RYrbJ4LJ8p9e7kKaJl8bHYjz8uJ1fSuaW+Wf8A/bUTeBjV++o5p0Fpy1KBPvMnAhXE2ScL4FQ1xLdF+V/VOhSW5Tj3+cttFpL0jxbuSDAfa8SiIJgtTBXArTk2stu7QgY2J2Gl3/BkVms3kaBD4xxasa9xxAiSDTbp67GUPHcoZdIdQzgHnwQybYb4bgroTOQ4pIxBfIXQliti0l9K41PAhMnxNXB1rn0Xfibz+MuctKZCIsN74SeNNgOVeQ=
+    secure: F16MI47/lpnwEd8kBxrwhmHuXw3sVLaeASfxASg5pVjvdX7mITaX6Zqta1skdyGG0Nzi9QVingrNKHDueLq/wd1EODKNCayOcxO56bH6gQEznhQ/TueXclJpQgZX10FtvG3leR5vPfJMNmjEj3AwmyYdQQ3X7o1RmPWSIERgP2WAzn27ZPX5a9agOhG+rheAC0AZkjTXx0L/++1+QEiQaYarOcrwVdp1E5zduU81Nc5tnbUP8HWfV9AWIWayYQ/DBqS46cDIDVSyeq/mHhlnl/ZVpee4I9dTOzmLyM77V603oh24wc4RtClNL/k5M0rpGBp6CRBBeJeiBW1Vaf1UaZc6cpAbVUp3LNoBBPvGVjvGWqi0ZkHjWvGhkdoCQMT7TxiF6+j1zkrjSv7fa0hqkADuaLsoBc1TdXPNqJR2IhNAxeaAen3h3z+rqwenKs/ebTkmotYHfVNpnH5aL+7aGM+oxOOV6MB2mPbw2UKtGHbwt4Iw9z7BmNWhyu3Y7NtS6i8YJ3wfOJjRQ6JAVKdbaWWF6UTJLJzyF6947FbeXlm/b9PA3PRwclFVUyuPPCfQNKvXkNpDE0aOuyoHqpFJ+yrE4Swz4mSIoBUAliPWEj21yb5yexuOOel4YVibLm/iqpcZlLwzvhdgwFEgCjLtVoTQbSftBFwIKLkzHTWHX+Q=
   file_glob: true
-  file: library/build/libs/google-translate-*.jar
-  skip_cleanup: true
+  file: "*/build/libs/*.jar,*/build/outputs/aar/*-release.aar"
   on:
-    tags: true
+    repo: ligboy/stetho-util
 after_deploy:
-  - "./gradlew stetho:bintrayUpload"
-  - "./gradlew stetho-no-op:bintrayUpload"
-  - "./gradlew stetho-okhttp:bintrayUpload"
-  - "./gradlew stetho-okhttp-no-op:bintrayUpload"
-  - "./gradlew stetho-timber:bintrayUpload"
-  - "./gradlew stetho-timber-no-op:bintrayUpload"
+- "./gradlew stetho:bintrayUpload"
+- "./gradlew stetho-no-op:bintrayUpload"
+- "./gradlew stetho-okhttp:bintrayUpload"
+- "./gradlew stetho-okhttp-no-op:bintrayUpload"
+- "./gradlew stetho-timber:bintrayUpload"
+- "./gradlew stetho-timber-no-op:bintrayUpload"
 branches:
   except:
   - gh-pages
@@ -33,5 +31,5 @@ notifications:
 sudo: false
 cache:
   directories:
-    - "$HOME/.gradle/caches/"
-    - "$HOME/.gradle/wrapper/"
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
