@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/stetho" />
+            <option value="$PROJECT_DIR$/stetho-no-op" />
+            <option value="$PROJECT_DIR$/stetho-okhttp" />
+            <option value="$PROJECT_DIR$/stetho-okhttp-no-op" />
+            <option value="$PROJECT_DIR$/stetho-okhttp3" />
+            <option value="$PROJECT_DIR$/stetho-okhttp3-no-op" />
+            <option value="$PROJECT_DIR$/stetho-timber" />
+            <option value="$PROJECT_DIR$/stetho-timber-no-op" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/stetho" />
+            <option value="$PROJECT_DIR$/stetho-no-op" />
+            <option value="$PROJECT_DIR$/stetho-okhttp" />
+            <option value="$PROJECT_DIR$/stetho-okhttp-no-op" />
+            <option value="$PROJECT_DIR$/stetho-okhttp3" />
+            <option value="$PROJECT_DIR$/stetho-okhttp3-no-op" />
+            <option value="$PROJECT_DIR$/stetho-timber" />
+            <option value="$PROJECT_DIR$/stetho-timber-no-op" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ligboy.library.stetho_okhttp3">
+
+    <application>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+ext {
+
+    projectName = 'stetho-util'
+    projectDesc = 'Utils for the facebook stetho.'
+
+    githubUrl = 'https://github.com/ligboy/stetho-util'
+
+    mavenGroup = 'org.ligboy'
+    mavenArtifactId = project.name
+    mavenVersion = '0.1.0'
+
+    bintrayOrg = 'ligboy'
+
+    supportVersion = '23.1.1'
+    stethoVersion = '1.3.1'
+    timberVersion = '4.1.2'
+    okhttp2Version = '2.7.5'
+    okhttp3Version = '3.2.0'
+}

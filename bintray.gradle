@@ -1,0 +1,41 @@
+apply plugin: 'com.jfrog.bintray'
+apply plugin: "maven-publish"
+apply from: "${rootProject.projectDir}/constants.gradle"
+
+group = mavenGroup
+version = mavenVersion
+
+bintray {
+    user = hasProperty('BINTRAY_USER') ? getProperty('BINTRAY_USER') : System.getenv('BINTRAY_USER')
+    key = hasProperty('BINTRAY_KEY') ? getProperty('BINTRAY_KEY') : System.getenv('BINTRAY_KEY')
+
+    configurations = [ 'archives' ]
+    publish = true
+
+    pkg {
+        repo = "maven"
+        name = mavenArtifactId
+        desc = projectDesc
+        userOrg = bintrayOrg
+        licenses = [ 'Apache-2.0' ]
+        vcsUrl = "${githubUrl}.git"
+        issueTrackerUrl = "${githubUrl}/issues"
+        websiteUrl = githubUrl
+        licenses = ['Apache-2.0']
+        labels = ['Google Translate']
+
+        version {
+            name = mavenVersion
+            gpg {
+                sign = true
+            }
+            mavenCentralSync {
+                sync = true //Optional (true by default). Determines whether to sync the version to Maven Central.
+                user = hasProperty('OSS_USER') ? getProperty('OSS_USER') : System.getenv('OSS_USER') //OSS user token
+                password = hasProperty('OSS_KEY') ? getProperty('OSS_KEY') : System.getenv('OSS_KEY') //OSS user password
+                close = '1' //Optional property. By default the staging repository is closed and artifacts are released to Maven Central. You can optionally turn this behaviour off (by puting 0 as value) and release the version manually.
+            }
+        }
+
+    }
+}

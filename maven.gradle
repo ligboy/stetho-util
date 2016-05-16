@@ -1,0 +1,68 @@
+apply plugin: 'com.github.dcendents.android-maven'
+apply from: "${rootProject.projectDir}/constants.gradle"
+
+project.archivesBaseName = mavenArtifactId
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.getSrcDirs()
+    classifier "sources"
+}
+
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.getSrcDirs()
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    failOnError = false
+    options {
+        encoding 'UTF-8'
+        links "http://docs.oracle.com/javase/7/docs/api/"
+        linksOffline "http://d.android.com/reference","${android.sdkDirectory}/docs/reference"
+    }
+    exclude '**/BuildConfig.java'
+    exclude '**/R.java'
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+// add javadoc/source jar tasks as artifacts
+artifacts {
+    archives sourcesJar, javadocJar
+}
+
+install {
+    repositories.mavenInstaller {
+        pom.project {
+            name projectName
+            description projectDesc
+            url githubUrl
+            inceptionYear Calendar.getInstance().get(Calendar.YEAR);
+
+            packaging 'aar'
+            groupId mavenGroup
+            artifactId mavenArtifactId
+            version mavenVersion
+
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+            scm {
+                connection "${githubUrl}.git"
+                url githubUrl
+            }
+            developers {
+                developer {
+                    id 'ligboy'
+                    name 'ligboy'
+                    email 'ligboy@gmail.com'
+                }
+            }
+        }
+    }
+}
