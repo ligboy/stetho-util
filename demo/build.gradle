@@ -61,4 +61,5 @@ dependencies {
     }
     releaseCompile project(':stetho-timber-no-op')
     testCompile project(':stetho-timber-no-op')
+    compile 'com.android.support:design:23.4.0'
 }
