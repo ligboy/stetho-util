@@ -8,23 +8,23 @@ This library already included in Jcenter & MavenCentral
 #### Gradle:
 Stetho Base Util
 ```groovy
-compile 'org.ligboy:stetho-no-op:0.1.0'
-debugCompile 'org.ligboy:stetho:0.1.0'
+compile 'org.ligboy:stetho-no-op:0.2.0'
+debugCompile 'org.ligboy:stetho:0.2.0'
 ```
 Stetho OkHttp Util
 ```groovy
-compile 'org.ligboy:stetho-okhttp-no-op:0.1.0'
-debugCompile 'org.ligboy:stetho-okhttp:0.1.0'
+compile 'org.ligboy:stetho-okhttp-no-op:0.2.0'
+debugCompile 'org.ligboy:stetho-okhttp:0.2.0'
 ```
 Stetho OkHttp3 Util
 ```groovy
-compile 'org.ligboy:stetho-okhttp3-no-op:0.1.0'
-debugCompile 'org.ligboy:stetho-okhttp3:0.1.0'
+compile 'org.ligboy:stetho-okhttp3-no-op:0.2.0'
+debugCompile 'org.ligboy:stetho-okhttp3:0.2.0'
 ```
 Stetho Timber Util
 ```groovy
-compile 'org.ligboy:stetho-timber-no-op:0.1.0'
-debugCompile 'org.ligboy:stetho-timber:0.1.0'
+compile 'org.ligboy:stetho-timber-no-op:0.2.0'
+debugCompile 'org.ligboy:stetho-timber:0.2.0'
 ```
 #### Via Maven
 Stetho Base Util
@@ -33,13 +33,13 @@ Stetho Base Util
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>stetho-no-op</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>compile</scope>
   </dependency>
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>stetho</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>debug</scope>
   </dependency>
 </dependencies>
@@ -50,13 +50,13 @@ Stetho OkHttp Util
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>okhttp-no-op</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>compile</scope>
   </dependency>
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>okhttp</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>debug</scope>
   </dependency>
 </dependencies>
@@ -67,13 +67,13 @@ Stetho OkHttp3 Util
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>okhttp3-no-op</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>compile</scope>
   </dependency>
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>okhttp3</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>debug</scope>
   </dependency>
 </dependencies>
@@ -84,13 +84,13 @@ Stetho Timber Util
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>timber-no-op</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>compile</scope>
   </dependency>
   <dependency>
     <groupId>org.ligboy</groupId>
     <artifactId>timber</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <scope>debug</scope>
   </dependency>
 </dependencies>
