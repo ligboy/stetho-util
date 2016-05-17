@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "org.ligboy.library.stethoutil"
-        minSdkVersion 9
+        minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -19,8 +19,46 @@ android {
     }
 }
 
+//noinspection GroovyAssignabilityCheck
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.forcedModules = [
+            "com.android.support:support-annotations:${supportVersion}",
+            "com.android.support:appcompat-v7:${supportVersion}",
+            "com.android.support:support-v4:${supportVersion}",
+            "com.android.support:recyclerview-v7:${supportVersion}",
+            "com.jakewharton.timber:timber:${timberVersion}",
+            "com.squareup.okhttp3:okhttp:${okhttp3Version}",
+            "com.squareup.okhttp:okhttp:${okhttp2Version}"
+    ]
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile "com.android.support:appcompat-v7:${supportVersion}"
+    compile "com.squareup.okhttp:okhttp:${okhttp2Version}"
+    compile "com.squareup.okhttp3:okhttp:${okhttp3Version}"
+    compile "com.jakewharton.timber:timber:${timberVersion}"
+
+//    compile "org.ligboy:stetho-no-op:${mavenVersion}"
+//    debugCompile "org.ligboy:stetho:${mavenVersion}"
+
+    debugCompile project(':stetho')
+    releaseCompile project(':stetho-no-op')
+    testCompile project(':stetho-no-op')
+
+    debugCompile project(':stetho-okhttp')
+    releaseCompile project(':stetho-okhttp-no-op')
+    testCompile project(':stetho-okhttp-no-op')
+
+    debugCompile project(':stetho-okhttp3')
+    releaseCompile project(':stetho-okhttp3-no-op')
+    testCompile project(':stetho-okhttp3-no-op')
+
+    debugCompile(project(':stetho-timber')) {
+        exclude group: "com.jakewharton.timber", module: "timber"
+    }
+    releaseCompile project(':stetho-timber-no-op')
+    testCompile project(':stetho-timber-no-op')
 }
