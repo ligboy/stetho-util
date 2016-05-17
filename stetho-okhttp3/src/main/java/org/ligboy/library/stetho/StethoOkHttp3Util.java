@@ -14,6 +14,7 @@ public class StethoOkHttp3Util {
     /**
      * Setup Stetho for OkHttp3
      * @param builder The {@link Builder} of the {@link OkHttpClient}
+     * @return The {@link Builder} for building {@link OkHttpClient}.
      */
     @NonNull
     public static Builder setup(@NonNull OkHttpClient.Builder builder) {
