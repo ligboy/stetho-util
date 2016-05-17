@@ -107,7 +107,7 @@ public class DemoApplication extends Application {
      * Don't do like this in product. You should use lazy initialization.
      */
     public static final OkHttpClient HTTP_CLIENT = new OkHttpClient();
-    public static final okhttp3.OkHttpClient HTTP_CLIENT_3 = new okhttp3.OkHttpClient();
+    public static okhttp3.OkHttpClient httpClient3;
 
     @Override
     public void onCreate() {
@@ -116,7 +116,9 @@ public class DemoApplication extends Application {
 
         StethoOkHttpUtil.setup(HTTP_CLIENT);
 
-        StethoOkHttp3Util.setup(HTTP_CLIENT_3);
+        httpClient3 = new okhttp3.OkHttpClient.Builder()
+                .addInterceptor(new StethoOkHttp3Interceptor())
+                .build();
 
         Timber.plant(new StethoTree());
     }
