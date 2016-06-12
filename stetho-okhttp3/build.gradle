@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply from: "${rootProject.projectDir}/constants.gradle"
 
+check.dependsOn 'checkstyle'
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"

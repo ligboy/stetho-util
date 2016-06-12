@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+
+check.dependsOn 'checkstyle'
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
