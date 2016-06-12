@@ -7,7 +7,7 @@ ext {
 
     mavenGroup = 'org.ligboy'
     mavenArtifactId = project.name
-    mavenVersion = '0.2.0'
+    mavenVersion = '0.3.0'
 
     bintrayOrg = 'ligboy'
 

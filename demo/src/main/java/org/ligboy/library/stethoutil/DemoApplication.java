@@ -34,5 +34,6 @@ public class DemoApplication extends Application {
                 .build();
 
         Timber.plant(new StethoTree());
+        Timber.plant(new Timber.DebugTree());
     }
 }
