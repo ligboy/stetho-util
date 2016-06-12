@@ -24,6 +24,9 @@ allprojects {
     repositories {
         jcenter()
     }
+    task checkstyle(type: Checkstyle, group: 'Verification', description: 'Runs code style checks') {
+        configFile = rootProject.file('checkstyle.xml')
+    }
 }
 
 subprojects {
