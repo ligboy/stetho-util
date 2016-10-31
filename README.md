@@ -8,22 +8,22 @@ This library already included in Jcenter & MavenCentral
 #### Gradle:
 Stetho Base Util
 ```groovy
-compile 'org.ligboy:stetho-no-op:0.3.0'
+releaseCompile 'org.ligboy:stetho-no-op:0.3.0'
 debugCompile 'org.ligboy:stetho:0.3.0'
 ```
 Stetho OkHttp Util
 ```groovy
-compile 'org.ligboy:stetho-okhttp-no-op:0.3.0'
+releaseCompile 'org.ligboy:stetho-okhttp-no-op:0.3.0'
 debugCompile 'org.ligboy:stetho-okhttp:0.3.0'
 ```
 Stetho OkHttp3 Util
 ```groovy
-compile 'org.ligboy:stetho-okhttp3-no-op:0.3.0'
+releaseCompile 'org.ligboy:stetho-okhttp3-no-op:0.3.0'
 debugCompile 'org.ligboy:stetho-okhttp3:0.3.0'
 ```
 Stetho Timber Util
 ```groovy
-compile 'org.ligboy:stetho-timber-no-op:0.3.0'
+releaseCompile 'org.ligboy:stetho-timber-no-op:0.3.0'
 debugCompile 'org.ligboy:stetho-timber:0.3.0'
 ```
 #### Via Maven
