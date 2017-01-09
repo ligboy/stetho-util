@@ -22,6 +22,9 @@ android {
 
     lintOptions {
         warning 'InvalidPackage'
+        lintOptions {
+            abortOnError false
+        }
     }
 }
 
