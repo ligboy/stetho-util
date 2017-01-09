@@ -46,6 +46,7 @@ dependencies {
     compile "com.squareup.okhttp:okhttp:${okhttp2Version}"
     compile "com.squareup.okhttp3:okhttp:${okhttp3Version}"
     compile "com.jakewharton.timber:timber:${timberVersion}"
+    compile "com.android.support:design:${supportVersion}"
 
 //    compile "org.ligboy:stetho-no-op:${mavenVersion}"
 //    debugCompile "org.ligboy:stetho:${mavenVersion}"
@@ -67,5 +68,4 @@ dependencies {
     }
     releaseCompile project(':stetho-timber-no-op')
     testCompile project(':stetho-timber-no-op')
-    compile 'com.android.support:design:23.4.0'
 }
