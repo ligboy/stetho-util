@@ -8,8 +8,8 @@ android:
   - platform-tools
   - tools
 
-  - build-tools-23.0.3
-  - android-23
+  - build-tools-25.0.2
+  - android-25
   - extra
   - addon
   #- sys-img-x86_64-android-23
