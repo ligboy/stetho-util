@@ -3,13 +3,13 @@ apply plugin: 'com.android.application'
 check.dependsOn 'checkstyle'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "org.ligboy.library.stethoutil"
-        minSdkVersion 15
-        targetSdkVersion 23
+        applicationId "org.ligboy.demo.stethoutil"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }

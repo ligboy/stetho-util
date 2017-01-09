@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">StethoUtil</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">StethoUtil</string>
 </resources>

@@ -1,4 +1,4 @@
-package org.ligboy.library.stethoutil;
+package org.ligboy.demo.stethoutil;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

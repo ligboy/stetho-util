@@ -4,14 +4,24 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StethoUtil.iml" filepath="$PROJECT_DIR$/StethoUtil.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho/stetho.iml" filepath="$PROJECT_DIR$/stetho/stetho.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho/stetho.iml" filepath="$PROJECT_DIR$/stetho/stetho.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho-no-op/stetho-no-op.iml" filepath="$PROJECT_DIR$/stetho-no-op/stetho-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-no-op/stetho-no-op.iml" filepath="$PROJECT_DIR$/stetho-no-op/stetho-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-okhttp/stetho-okhttp.iml" filepath="$PROJECT_DIR$/stetho-okhttp/stetho-okhttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho-okhttp/stetho-okhttp.iml" filepath="$PROJECT_DIR$/stetho-okhttp/stetho-okhttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho-okhttp-no-op/stetho-okhttp-no-op.iml" filepath="$PROJECT_DIR$/stetho-okhttp-no-op/stetho-okhttp-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-okhttp-no-op/stetho-okhttp-no-op.iml" filepath="$PROJECT_DIR$/stetho-okhttp-no-op/stetho-okhttp-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-okhttp3/stetho-okhttp3.iml" filepath="$PROJECT_DIR$/stetho-okhttp3/stetho-okhttp3.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho-okhttp3/stetho-okhttp3.iml" filepath="$PROJECT_DIR$/stetho-okhttp3/stetho-okhttp3.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho-okhttp3-no-op/stetho-okhttp3-no-op.iml" filepath="$PROJECT_DIR$/stetho-okhttp3-no-op/stetho-okhttp3-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-okhttp3-no-op/stetho-okhttp3-no-op.iml" filepath="$PROJECT_DIR$/stetho-okhttp3-no-op/stetho-okhttp3-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-timber/stetho-timber.iml" filepath="$PROJECT_DIR$/stetho-timber/stetho-timber.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho-timber/stetho-timber.iml" filepath="$PROJECT_DIR$/stetho-timber/stetho-timber.iml" />
       <module fileurl="file://$PROJECT_DIR$/stetho-timber-no-op/stetho-timber-no-op.iml" filepath="$PROJECT_DIR$/stetho-timber-no-op/stetho-timber-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-timber-no-op/stetho-timber-no-op.iml" filepath="$PROJECT_DIR$/stetho-timber-no-op/stetho-timber-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stetho-util.iml" filepath="$PROJECT_DIR$/stetho-util.iml" />
     </modules>
   </component>
 </project>
