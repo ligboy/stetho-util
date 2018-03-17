@@ -7,7 +7,7 @@ ext {
 
     mavenGroup = 'org.ligboy'
     mavenArtifactId = project.name
-    mavenVersion = '0.3.0'
+    mavenVersion = '0.4.0'
 
     bintrayOrg = 'ligboy'
 
@@ -20,7 +20,7 @@ ext {
     versionName = ""
 
     supportVersion = '25.1.0'
-    stethoVersion = '1.4.2'
+    stethoVersion = '1.5.0'
     timberVersion = '4.4.0'
     okhttp2Version = '2.7.5'
     okhttp3Version = '3.5.0'
